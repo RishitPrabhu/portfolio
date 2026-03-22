@@ -3,17 +3,20 @@ import React from 'react';
 const Navbar = () => (
   <nav className="fixed top-0 w-full z-50 bg-[#fff8f7]/80 backdrop-blur-xl shadow-[0_40px_60px_-15px_rgba(33,26,25,0.06)]">
     <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-      <div className="tracking-wide text-2xl font-black font-headline tracking-tighter text-[#211a19]">
+
+      <div className="tracking-wide sm:text-2xl text-base font-black font-headline tracking-tighter text-[#211a19]">
         PORTFOLIO
-        <p className='text-secondary text-xs tracking-wide'>RISHIT PRABHU</p>
+        <p className='text-secondary sm:text-sm text-xs  tracking-wide'>RISHIT PRABHU</p>
       </div>
-      <div className="flex justify-between gap-8  font-headline tracking-tight text-sm uppercase font-bold text-[#211a19]/60 ">
+
+      <div className="flex justify-between gap-8  font-headline tracking-tight sm:text-sm text-xs uppercase font-bold text-[#211a19]/60 ">
         <a className="hover:text-primary transition-colors cursor-pointer active:scale-95" href="#projects">Projects</a>
         <a className="text-primary border-b-2 border-primary pb-1 cursor-pointer active:scale-95" href="#about">About</a>
         <a className="hover:text-primary transition-colors cursor-pointer active:scale-95" href="#contact">Contact</a>
       </div>
       <div className="flex items-center gap-4 text-primary">
-        <span className="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity">M</span>
+      
+        <img src='/icons/mail.svg' className='w-5 sm:w-8'/>
       </div>
     </div>
     <div className="bg-[#fff0ef] h-[1px] w-full absolute bottom-0 opacity-10"></div>
@@ -21,10 +24,10 @@ const Navbar = () => (
 );
 
 const Hero = () => (
-  <section className="grid grid-cols-2 md:grid-cols-12 gap-12 items-end mb-40">
+  <section className="grid grid-cols-2 gap-5 md:gap-12 items-end mb-40">
 
-    <div className="md:col-span-5 relative group">
-      <div className="w-100 bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
+    <div className="relative group">
+      <div className="md:w-100 w-50 bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
         <img 
           alt="Professional profile portrait" 
           className=" object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100" 
@@ -33,11 +36,13 @@ const Hero = () => (
       </div>
 
     </div>
-    <div className="md:col-span-7 md:pl-12 pb-10">
+    <div className="md:pl-12 pb-10">
       <span className="font-label text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">The Visionary</span>
+
       <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-surface mb-8 leading-[0.9]">
         I'm RISHIT <br/>PRABHU.
       </h1>
+
 <div className="w-full overflow-hidden py-4">
   {/* The "Track" that moves */}
   <div className="flex w-max animate-infinite-scroll select-none">
