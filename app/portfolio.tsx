@@ -27,7 +27,7 @@ const Hero = () => (
   <section className="grid grid-cols-2 gap-5 md:gap-12 items-end mb-40">
 
     <div className="relative group">
-      <div className="md:w-100 w-50 bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
+      <div className="w-full bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
         <img 
           alt="Professional profile portrait" 
           className=" object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100" 
@@ -36,14 +36,14 @@ const Hero = () => (
       </div>
 
     </div>
-    <div className="md:pl-12 pb-10">
+    <div className="md:pl-12">
       <span className="font-label text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">The Visionary</span>
 
-      <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-surface mb-8 leading-[0.9]">
+      <h1 className="font-headline text-3xl md:text-7xl font-black tracking-tighter text-on-surface mb-8 leading-[0.9]">
         I'm RISHIT <br/>PRABHU.
       </h1>
 
-<div className="w-full overflow-hidden py-4">
+<div className="w-full overflow-hidden py-4 ml-12  md:ml-0">
   {/* The "Track" that moves */}
   <div className="flex w-max animate-infinite-scroll select-none">
     
@@ -124,82 +124,8 @@ const Skills = () => {
 
 const Portfolio = () => {
   return (
-    <div className="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen">
-      <Navbar />
-      
-      <main className="pt-32 pb-20 max-w-7xl mx-auto px-8">
-        <Hero />
-
-        {/* Story Section */}
-        <section className="grid grid-cols-2 gap-8 mb-40">
-          <div className="md:col-span-2 bg-surface-container-lowest p-12 md:p-20 rounded-xl">
-            <span className="font-label text-xs font-bold uppercase tracking-[0.2em] text-outline mb-8 block">My Story</span>
-            <h2 className="font-headline text-3xl font-bold mb-10 text-on-surface">The Craft of <br/>World-Class Products.</h2>
-            <div className="space-y-8 font-body text-lg leading-loose text-on-surface-variant">
-              <p>Born from a desire to push forward the current limits of modern technology, my journey began in Rrobotics and Automation.</p>
-              <p>Today, I translate that tactile sensibility into digital landscapes. I believe every pixel should serve a purpose.</p>
-            </div>
-          </div>
-          
-          <div className="flex flex-col gap-8">
-            <div className="bg-primary-container/20 p-12 rounded-xl flex-1">
-              <span className="font-label text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Philosophy</span>
-              <p className="font-headline text-2xl font-bold text-on-primary-container leading-snug">"Good design is a silent ambassador."</p>
-            </div>
-            <div className="bg-secondary-container/30 p-12 rounded-xl">
-              <span className="font-label text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-6 block">Current Location</span>
-              <p className="font-headline text-xl font-bold text-on-secondary-container flex items-center gap-2">
-                <span className="material-symbols-outlined">
-                                <img 
-                        alt="Location" 
-                        className='w-4.5'
-                        src="/icons/location.svg"
-                        />
-                        
-                </span> Pune, India
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <Skills />
-
-        {/* CTA Section */}
-        <section className="mt-40 text-center">
-          <div className="inline-block py-20 px-8 md:px-24 bg-surface-variant rounded-xl relative overflow-hidden w-full">
-            <div className="relative z-10">
-              <h2 className="font-headline text-4xl md:text-5xl font-black mb-10 text-on-surface">Have something in mind?</h2>
-              <a href="mailto:hello@studiocurated.com" className="inline-flex items-center justify-center h-14 px-10 bg-primary text-on-primary rounded-full font-label font-bold uppercase tracking-widest hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/20">
-                Let's Talk
-              </a>
-            </div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-container/10 rounded-full -ml-48 -mb-48 blur-3xl"></div>
-          </div>
-        </section>
-      </main>
-
-      <footer className="bg-[#fff0ef] w-full py-24 px-8 mt-40">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto gap-12">
-          <div>
-            <div className="font-headline font-bold text-lg text-on-surface mb-4">Portfolio</div>
-            <p className="font-body italic text-base text-on-surface opacity-70">You're at rishitprabhu.com</p>
-          </div>
-          <div className="flex gap-8">
-
-            <a href="https://www.linkedin.com/in/rishitprabhu/" target='_blank' className="font-body italic text-base text-on-surface opacity-70 hover:opacity-100 hover:text-primary transition-all underline decoration-primary-container underline-offset-4">
-                LinkedIn
-            </a>
-
-            <a href="https://github.com/RishitPrabhu" target='_blank' className="font-body italic text-base text-on-surface opacity-70 hover:opacity-100 hover:text-primary transition-all underline decoration-primary-container underline-offset-4">
-                Github
-            </a>
-            <a href="https://leetcode.com/u/RishitP/" target='_blank' className="font-body italic text-base text-on-surface opacity-70 hover:opacity-100 hover:text-primary transition-all underline decoration-primary-container underline-offset-4">
-                Leetcode
-            </a>
-          </div>
-        </div>
-      </footer>
+    <div>
+      <h1>Website under Development. Thank you for your curiosity.</h1>
     </div>
   );
 };
