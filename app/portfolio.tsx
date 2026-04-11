@@ -1,27 +1,6 @@
 import React from 'react';
 
-const Navbar = () => (
-  <nav className="fixed top-0 w-full z-50 bg-[#fff8f7]/80 backdrop-blur-xl shadow-[0_40px_60px_-15px_rgba(33,26,25,0.06)]">
-    <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-
-      <div className="tracking-wide sm:text-2xl text-base font-black font-headline tracking-tighter text-[#211a19]">
-        PORTFOLIO
-        <p className='text-secondary sm:text-sm text-xs  tracking-wide'>RISHIT PRABHU</p>
-      </div>
-
-      <div className="flex justify-between gap-8  font-headline tracking-tight sm:text-sm text-xs uppercase font-bold text-[#211a19]/60 ">
-        <a className="hover:text-primary transition-colors cursor-pointer active:scale-95" href="#projects">Projects</a>
-        <a className="text-primary border-b-2 border-primary pb-1 cursor-pointer active:scale-95" href="#about">About</a>
-        <a className="hover:text-primary transition-colors cursor-pointer active:scale-95" href="#contact">Contact</a>
-      </div>
-      <div className="flex items-center gap-4 text-primary">
-      
-        <img src='/icons/mail.svg' className='w-5 sm:w-8'/>
-      </div>
-    </div>
-    <div className="bg-[#fff0ef] h-[1px] w-full absolute bottom-0 opacity-10"></div>
-  </nav>
-);
+import Navbar  from './components/navbar';
 
 const Hero = () => (
   <section className="grid grid-cols-2 gap-5 md:gap-12 items-end mb-40">
@@ -124,8 +103,10 @@ const Skills = () => {
 
 const Portfolio = () => {
   return (
+    
     <div>
       <h1>Website under Development. Thank you for your curiosity.</h1>
+      <Navbar/>
     </div>
   );
 };
