@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -25,6 +26,25 @@
   --font-headline: "Epilogue", sans-serif;
   --font-body: "Noto Serif", serif;
   --font-label: "Manrope", sans-serif;
+
+  --font-sans-serif: sans-serif, serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-happy-monkey: 'Happy Monkey';
+
+  --animate-font-cycle: font-cycle 3s steps(1, end) infinite;
+
+  @keyframes font-cycle {
+    0%, 100% {
+      font-family: var(--font-sans)
+    }
+    33% {
+      font-family: var(--font-serif)
+    }
+    66% {
+      font-family: var(--font-mono)
+    }
+  }
 }
 
 /* Base styles for the body */
