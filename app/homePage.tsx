@@ -169,7 +169,6 @@ export default function Home() {
       <div className="wrap">
         <div className="section-head reveal">
           <div><div className="section-num">01 / SELECTED WORK</div><h2>Things I've<br/>built.</h2></div>
-          <p className="section-intro">A compact selection of engineering and software work. Replace the links below with the live demos and repositories you want recruiters to see first.</p>
         </div>
 
         <div className="projects">
@@ -186,7 +185,7 @@ export default function Home() {
             <div>
               <div className="card-top"><span className="tag">Computer Vision</span><span>02</span></div>
               <h3>Smart Conveyor System</h3>
-              <p>A smart conveyor system for automated sorting and monitoring luggage on conveyor belts, utilizing C++ and Node-red for i APIS</p>
+              <p>A smart conveyor system for automated sorting and monitoring luggage on conveyor belts, utilizing C++ and Node-red for APIS</p>
             </div>
             <div className="stack"><span>Python</span><span>OpenCV</span><span>Raspberry Pi</span></div>
           </article>
